@@ -15,7 +15,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws-messaging', version: '2.2.6.RELEASE'
-
+	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:${spring_version}'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

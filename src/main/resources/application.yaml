@@ -1,4 +1,3 @@
-
 spring:
   config:
     import: optional:file:.env[.properties]
@@ -18,6 +17,9 @@ cloud:
       secret-key: ${SECRET_KEY}
     sqs:
       customer-register: ${CUSTOMER_QUEUE}
+      customer-register-dlq: ${CUSTOMER_QUEUE}
+    sns:
+      customer-register-topic: ${CUSTOMER_REGISTER_TOPIC}
     
 logging:
   level:
